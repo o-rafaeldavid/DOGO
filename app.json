@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "DOGO",
+    "slug": "DOGO",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pogodogo.DOGO"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.pogodogo.DOGO"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoicG9nb2RvZ28iLCJhIjoiY2xvZGVpcngxMDdudjJrcGx1YXc3Mzl6NCJ9.g7kKcEIBbebBTgDh8kTg2A"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7c8f1fa9-d57b-4e8d-9c1c-4a572b23da07"
+      }
+    }
+  }
+}
