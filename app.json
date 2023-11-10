@@ -2,6 +2,7 @@
   "expo": {
     "name": "DOGO",
     "slug": "DOGO",
+    "scheme": "DOGO",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,8 +16,7 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.pogodogo.DOGO"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
@@ -26,9 +26,11 @@
       "package": "com.pogodogo.DOGO"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
+      "expo-router",
       [
         "@rnmapbox/maps",
         {
@@ -38,8 +40,11 @@
       ]
     ],
     "extra": {
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "7c8f1fa9-d57b-4e8d-9c1c-4a572b23da07"
+        "projectId": "01a51927-3e1f-438b-8ba1-f4c893bfa47d"
       }
     }
   }
